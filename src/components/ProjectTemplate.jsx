@@ -11,22 +11,18 @@ import {
 
 export function ProjectTemplate({ imgURL, title, desc, siteURL, repoURL }) {
   return (
-    <Card borderRadius={14} w="400px">
-      <CardBody borderRadius={14}>
-        <Box
-          justifyContent={"center"}
-          alignItems={"center"}
-          gap={"14px"}
-          h="300px"
-        >
+    <Card borderRadius={14} >
+      <CardBody borderRadius={14} >
+        <Box justifyContent={"center"} alignItems={"center"} gap={"14px"}>
           <Image
             src={imgURL}
             alt={`${title} preview image`}
             objectFit="contain"
             borderRadius={14}
+            boxSize={["200px", "400px"]}
           />
         </Box>
-        <Box w="100%" h="300px">
+        <Box w={["200px", "400px"]} h="300px">
           <VStack
             justifyContent={"center"}
             alignItems={"center"}
@@ -50,9 +46,9 @@ export function ProjectTemplate({ imgURL, title, desc, siteURL, repoURL }) {
                 {desc}
               </Text>
             </VStack>
-            <HStack justifyContent={"center"} alignItems="center" gap={"70px"}>
+            <HStack justifyContent={"center"} alignItems="center" gap={["10px","70px"]}>
               <a target="_blank" href={siteURL}>
-                <Button
+                <Button 
                   colorScheme="facebook"
                   bgColor={"#0A043C"}
                   color="white"
