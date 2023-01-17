@@ -8,7 +8,8 @@ export function Projects() {
       flexWrap={"wrap"}
       justifyContent="center"
       alignItems="center"
-      gap="30px" w={["300px", "400px"]}
+      gap="30px"
+      w={["300px","auto"]}
     >
       <ProjectTemplate
         imgURL={"/to-do.png"}

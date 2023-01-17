@@ -11,8 +11,8 @@ import {
 
 export function ProjectTemplate({ imgURL, title, desc, siteURL, repoURL }) {
   return (
-    <Card borderRadius={14} >
-      <CardBody borderRadius={14} >
+    <Card borderRadius={14}>
+      <CardBody borderRadius={14}>
         <Box justifyContent={"center"} alignItems={"center"} gap={"14px"}>
           <Image
             src={imgURL}
@@ -46,9 +46,13 @@ export function ProjectTemplate({ imgURL, title, desc, siteURL, repoURL }) {
                 {desc}
               </Text>
             </VStack>
-            <HStack justifyContent={"center"} alignItems="center" gap={["10px","70px"]}>
+            <HStack
+              justifyContent={"center"}
+              alignItems="center"
+              gap={["10px", "70px"]}
+            >
               <a target="_blank" href={siteURL}>
-                <Button 
+                <Button
                   colorScheme="facebook"
                   bgColor={"#0A043C"}
                   color="white"
