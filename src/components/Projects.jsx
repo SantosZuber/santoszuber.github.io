@@ -9,7 +9,7 @@ export function Projects() {
       justifyContent="center"
       alignItems="center"
       gap="30px"
-      w={["300px","auto"]}
+      w={["300px", "auto"]}
     >
       <ProjectTemplate
         imgURL={"/to-do.png"}
@@ -19,11 +19,11 @@ export function Projects() {
         repoURL={"https://github.com/SantosZuber/to-do-list-react-ts"}
       />
       <ProjectTemplate
-        imgURL={"/simple-ecommerce.png"}
-        title={"Simple e-commerce"}
-        desc={"Simple e-commerce built in HTML, CSS and Javascript "}
-        siteURL={"https://santoszuber.github.io/simple-ecommerce/"}
-        repoURL={"https://github.com/SantosZuber/simple-ecommerce"}
+        imgURL={"/tic-tac-toe.png"}
+        title={"Simple Tic Tac Toe"}
+        desc={"Tic Tac Toe made with React and ChakraUI."}
+        siteURL={"https://santoszuber.github.io/tic-tac-toe/"}
+        repoURL={"https://github.com/santoszuber/tic-tac-toe"}
       />
       <ProjectTemplate
         imgURL={"/online-chat.png"}
